@@ -1,0 +1,238 @@
+:root {
+  --main-text-color: rgba(0, 0, 0, 0.8);
+  --second-text-color: #000;
+  --accent-color: #18a0fb;
+  --main-bg-color: #fff;
+  --second-bg-color: #f5f5f5;
+}
+
+/* * {
+  outline: 1px solid rgba(240, 13, 13, 0.5);
+} */
+
+body {
+  color: var(--main-text-color);
+
+  font-family: montserrat, sans-serif;
+  letter-spacing: -0.015em;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.full-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: var(--second-text-color);
+  margin-left: 12px;
+
+  font-family: comfortaa, cursive;
+  font-size: 28px;
+  line-height: 1.14;
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 70px;
+}
+
+.site-nav a {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  color: var(--accent-color);
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--second-text-color);
+}
+
+.nav-link + .nav-link {
+  margin-left: 40px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav > li + li {
+  margin-left: 12px;
+}
+
+.button {
+  display: inline-block;
+
+  color: var(--second-text-color);
+  background-color: var(--main-bg-color);
+  border: 1px solid transparent;
+
+  padding: 11px 34px;
+  min-width: 130px;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  border-radius: 6px;
+}
+
+.button.primary {
+  color: var(--main-bg-color);
+  background-color: var(--accent-color);
+}
+
+.button.secondary {
+  border-color: var(--accent-color);
+
+  color: var(--accent-color);
+  background-color: var(--main-bg-color);
+}
+
+.different-color {
+  background-color: var(--second-bg-color);
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: var(--second-text-color);
+
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.43;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.section-title {
+  color: var(--second-text-color);
+  margin-top: 0;
+  margin-bottom: 60px;
+
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: var(--second-text-color);
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.work-item {
+  width: 606px;
+}
+
+.work :nth-child(odd) {
+  margin-right: 108px;
+}
+
+.work :not(:nth-last-child(-n + 2)) {
+  margin-bottom: 60px;
+}
+
+.work .text {
+  margin-bottom: 32px;
+}
+
+.item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.item:nth-child(even) {
+  background-color: var(--second-bg-color);
+}
+
+.section-title.last {
+  padding-bottom: 30px;
+}
+
+.slogan {
+  font-size: 36px;
+  line-height: 1.39;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.company-slogan {
+  font-size: 36px;
+  line-height: 1.39;
+  text-align: center;
+}
+
+.footer-nav a {
+  color: var(--second-text-color);
+}
+
+.footer-nav a:hover {
+  color: var(--accent-color);
+}
