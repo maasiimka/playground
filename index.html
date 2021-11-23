@@ -19,6 +19,7 @@
     <title>Document</title>
   </head>
   <body>
+    
     <!-- header -->
     <header class="page-header">
       <nav class="container navigation">
@@ -52,7 +53,7 @@
       <!-- work examples -->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="section-title left">
             Snap photos and share like <br />
             never before
           </h2>
@@ -99,37 +100,40 @@
       <!-- description -->
       <section class="section no-padding">
         <div class="container">
-          <h2 class="section-title">Different rectangles and other shit</h2>
-          <ul>
-            <li class="item">
+          <ul class="rectangles">
+            <li class="item-rectangles">
               <img
                 src="./image/rectangle.jpg"
                 alt="Rectangle"
                 width="750"
                 height="440"
               />
-              <h3 class="section-subtitle">Sed ut perspiciatis unde omnis</h3>
-              <p class="text">
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                dolorem.
-              </p>
+              <div>
+                <h3 class="section-subtitle">Sed ut perspiciatis unde omnis</h3>
+                <p class="text">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                  aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                  voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                  dolorem.
+                </p>
+              </div>
             </li>
-            <li class="item different-color">
+            <li class="item-rectangles ">
               <img
                 src="./image/rectangle.jpg"
                 alt="Rectangle"
                 width="750"
                 height="440"
               />
-              <h3 class="section-subtitle">Sed ut perspiciatis unde omnis</h3>
-              <p class="text">
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                dolorem.
-              </p>
+              <div>
+                <h3 class="section-subtitle">Sed ut perspiciatis unde omnis</h3>
+                <p class="text">
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                  aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                  voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                  dolorem.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -137,12 +141,12 @@
       <!-- you are in a good company -->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">You're in a good company</h2>
+          <h2 class="section-title centered">You're in a good company</h2>
           <p class="slogan">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore
           </p>
-          <ul>
+          <ul class="many-rectangles">
             <li>
               <img src="./image/smallRectangle.jpg" alt="Small Rectangle" />
             </li>
@@ -173,34 +177,57 @@
       <!-- join-contact section -->
       <section class="section">
         <div class="container">
-          <h2 class="section-title last">Last section</h2>
-          <p class="company-slogan">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore
-          </p>
-          <ul>
-            <li><a href="" class="button primary">Join Today</a></li>
-            <li><a href="" class="button secondary">Contact us</a></li>
-          </ul>
+          <div class="company">
+            <p class="company-slogan">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </p>
+            <ul class="c-b">
+              <li><a href="" class="button primary">Join Today</a></li>
+              <li><a href="" class="button secondary">Contact us</a></li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
     <!-- footer -->
-    <footer>
-      <ul class="footer-nav">
-        <li><a href="">Mobile app</a></li>
-        <li><a href="">Community</a></li>
-        <li><a href="">Company</a></li>
-      </ul>
-      <!-- logo -->
-      <a href="./index.html" class="logo">
-        <img src="./image/logo.svg" alt="Logo" /> photo
-      </a>
+    <footer class="container footer">
+      <div class="full-logo fmargin">
+        <img src="./image/Union.svg" alt="Logo" />
+        <a href="./index.html" class="logo">photo</a>
+      </div>
+      <ul class="footer-text">
+        <li class="width">  
+          <span class="bold">Mobile app</span>
+          <ul >
+            <li >Features</li>
+            <li >live share</li>
+            <li >Video record</li>
+          </ul>
+        </li>
 
-      <ul class="footer-nav">
-        <li><a href="">Help desk</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Resources</a></li>
+        <li class="width">
+          <span class="bold">Community</span>
+          <ul>
+            <li>Featured artists</li>
+            <li>The portal</li>
+            <li>Live events</li>
+          </ul>
+        </li>
+
+        <li class="width">
+          <span class="bold">Company</span>
+          <ul>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>History</li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="footer-buttons">
+        <li><a href="" class="button primary bmargin">Register</a></li>
+        <li><a href="" class="button secondary">Log in</a></li>
       </ul>
     </footer>
   </body>

@@ -38,9 +38,7 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 1500px;
 }
 
 .container.navigation {
@@ -167,6 +165,10 @@ ul {
   font-weight: 400;
   font-size: 48px;
   line-height: 1.5;
+  text-align: left;
+}
+
+.centered{
   text-align: center;
 }
 
@@ -183,12 +185,10 @@ ul {
 .work {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .work-item {
-  width: 606px;
+  width: calc((100% - 108px)/2);
 }
 
 .work :nth-child(odd) {
@@ -203,13 +203,24 @@ ul {
   margin-bottom: 32px;
 }
 
-.item {
+.item-rectangles {
   padding-top: 80px;
   padding-bottom: 80px;
+  display:flex;
+  align-items: center;
 }
 
-.item:nth-child(even) {
+.rectangles>:nth-child(even) {
   background-color: var(--second-bg-color);
+  flex-direction: row-reverse;
+}
+
+.rectangles>:nth-child(odd)>div{
+  margin-left: 84px;
+}
+
+.rectangles>:nth-child(even)>div{
+  margin-right: 84px;
 }
 
 .section-title.last {
@@ -223,16 +234,80 @@ ul {
   margin-bottom: 80px;
 }
 
+.many-rectangles{
+  display: flex;
+  flex-wrap: wrap;
+  width: 944px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.many-rectangles>:not(:nth-child(4n)){
+  margin-right: 84px;
+}
+
+.many-rectangles>:not(:nth-last-child(-n+4)){
+  margin-bottom: 64px;
+}
+
+.company{
+  display: flex;
+  align-items: center;
+}
+
+.company ul{
+  display: flex;
+}
+
+.company ul> li+li{
+  margin-left: 45px;
+}
+
 .company-slogan {
   font-size: 36px;
   line-height: 1.39;
-  text-align: center;
+  width: 943px;
+  margin-right: 84px;
 }
 
-.footer-nav a {
-  color: var(--second-text-color);
+.footer{
+  display:flex;
+  align-items: flex-start;
+  padding-top: 128px;
+  padding-bottom: 10px;
 }
 
-.footer-nav a:hover {
-  color: var(--accent-color);
+.fmargin{
+  margin-right: 630px;
+}
+
+.footer-text{
+  display: flex;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-text>li+li{
+  padding-left: 20px;
+}
+
+.width{
+  min-width: 150px;
+}
+
+.bold{
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.footer-buttons{
+  margin-left: 64px;
+}
+
+.bmargin{
+  margin-bottom: 25px;
 }
