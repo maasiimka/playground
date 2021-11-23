@@ -168,7 +168,9 @@ ul {
   text-align: left;
 }
 
-
+.centered{
+  text-align: center;
+}
 
 .section-subtitle {
   color: var(--second-text-color);
@@ -206,7 +208,6 @@ ul {
   padding-bottom: 80px;
   display:flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .rectangles>:nth-child(even) {
@@ -233,16 +234,80 @@ ul {
   margin-bottom: 80px;
 }
 
+.many-rectangles{
+  display: flex;
+  flex-wrap: wrap;
+  width: 944px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.many-rectangles>:not(:nth-child(4n)){
+  margin-right: 84px;
+}
+
+.many-rectangles>:not(:nth-last-child(-n+4)){
+  margin-bottom: 64px;
+}
+
+.company{
+  display: flex;
+  align-items: center;
+}
+
+.company ul{
+  display: flex;
+}
+
+.company ul> li+li{
+  margin-left: 45px;
+}
+
 .company-slogan {
   font-size: 36px;
   line-height: 1.39;
-  text-align: center;
+  width: 943px;
+  margin-right: 84px;
 }
 
-.footer-nav a {
-  color: var(--second-text-color);
+.footer{
+  display:flex;
+  align-items: flex-start;
+  padding-top: 128px;
+  padding-bottom: 10px;
 }
 
-.footer-nav a:hover {
-  color: var(--accent-color);
+.fmargin{
+  margin-right: 630px;
+}
+
+.footer-text{
+  display: flex;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-text>li+li{
+  padding-left: 20px;
+}
+
+.width{
+  min-width: 150px;
+}
+
+.bold{
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.footer-buttons{
+  margin-left: 64px;
+}
+
+.bmargin{
+  margin-bottom: 25px;
 }
